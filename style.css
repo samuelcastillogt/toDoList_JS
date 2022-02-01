@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 body{
-    background: rgb(67,172,193);
-    background: linear-gradient(90deg, rgba(67,172,193,1) 0%, rgba(56,146,170,0.8631827731092436) 29%, rgba(0,212,255,1) 100%);
+    /* background: rgb(67,172,193);
+    background: linear-gradient(90deg, rgba(67,172,193,1) 0%, rgba(56,146,170,0.8631827731092436) 29%, rgba(0,212,255,1) 100%); */
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav{
+    
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
 }
 .hidden{
     display: none;
@@ -24,12 +28,21 @@ li{
     justify-content: center;
     align-items: center;
     list-style: none;
-    border: 1px solid white;
-    background-color: aliceblue;
+    border: 1px solid black;
+    position: relative;
+    /*background-color: aliceblue;*/
+    box-shadow: 10px 1px 20px black;
     border-radius: 6px;
     height: 100px;
+    width: 90%;
     padding: 20px;
     margin: 10px;
+}
+li button{
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    box-shadow: 3px 3px 3px black;
 }
 #crear{
     text-align: center;
@@ -40,8 +53,24 @@ li{
     height: 60px;
     border-radius: 50%;
     font-size: 2em;
+    box-shadow: 4px 4px 10px black;
 }
 #form-container{
     position: fixed;
     bottom: 50%;
+    z-index: 99999999999999;
+}
+.navbar{
+    box-shadow: 10px 2px 10px black;
+}
+#input{
+    border-radius: 6px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 10px 2px 10px black
+}
+.blur{
+    filter: blur(3px);
 }
